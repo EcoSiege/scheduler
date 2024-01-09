@@ -7,7 +7,7 @@ A web page for keeping a single day schedule
 This page does 2 main things 
 1.  Anything saved to one of the text boxes is saved to local storag and retrieved when the page is reloaded to the same text box
 2. The backgroud color changes to show if an hour is past or not whenever the page is reloaded
-    1. gray means that the hour is in the past
-    2. yellow shows the current hour
-    3. green shows future hours
+    1. Gray means that the hour is in the past
+    2. Red shows the current hour
+    3. Green shows future hours
 
