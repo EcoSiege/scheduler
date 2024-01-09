@@ -4,8 +4,7 @@
 $(function () {
   const today = dayjs();
   const bodyEl = $('body');
-  var times = document.querySelectorAll('div.time-block');
-  console.log(today.format('HH'));
+  const times = document.querySelectorAll('div.time-block');
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -36,9 +35,8 @@ $(function () {
   // attribute of each time-block be used to do this?
   //
   times.forEach(element => {
-    var hour = localStorage.getItem(element.id)
-    console.log(hour)
-    element.children[1].textContent(hour)
+    var data = localStorage.getItem(element.id)
+    $('.container-lg').children('#'+element.id).children('.description').text(data)
   })
   // TODO: Add code to display the current date in the header of the page.
  
